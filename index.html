@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Admin Dashboard</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="index.html">LIVENAR</a>
+			</div>
+			<div class="user-profile">
+				<i class="fa fa-bell" id="bells"></i>
+				<div class="profile-icon">
+					<img src="./img/profile.png" alt="User profile image" />
+				</div>
+				<div class="user-info">
+					<span class="user-name">Lawrence</span>
+					<span class="dropdown-arrow"></span>
+				</div>
+				<div class="dropdown-menu">
+					<ul>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="wrapper">
+			<nav id="sidebar">
+				<div class="sidebar-header">
+					<button type="button" class="btn-sidebar-toggle">
+						<i id="bars" class="fa fa-bars"></i>
+					</button>
+				</div>
+
+				<ul class="list-unstyled components">
+					<li>
+						<a href="#"><i class="fab fa-facebook"></i><span>Facebook</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-cloud"></i><span>Cloud</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-cog"></i><span>Gear</span></a>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-laptop"></i><span>Files</span></a>
+					</li>
+					<li>
+						<a href="#"
+							><i class="fas fa-mobile-alt"></i><span>Devices</span></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><i class="fas fa-question-circle"></i><span>Help</span></a
+						>
+					</li>
+					<li>
+						<a id="active" href="#"
+							><i class="fa fa-home"></i><span>Home</span></a
+						>
+					</li>
+				</ul>
+			</nav>
+			<div id="content">
+				<h1>Connect Autoresponders</h1>
+				<p>
+					With the autoresponders mentioned below, you can integrate. Once
+					linked, you can set behavioral guidelines in your products to add
+					customers to mailing lists, tag them when they cancel their
+					subscription, and a lot more!
+				</p>
+				<div class="card_wrapper">
+					<div class="card">
+						<img class="centered img-fluid" src="./img/mailchimp.png" alt="" />
+						<h5>Mailchimp</h5>
+						<div class="box">🟢 0 Account Connected</div>
+						<button class="cards-btn">
+							INTEGRATE NOW <span class="fa fa-arrow-right"></span>
+						</button>
+					</div>
+					<div class="card">
+						<img
+							id="second-child"
+							src="./img/response.png"
+							alt=""
+							class="centered"
+						/>
+						<h5>Getresponse</h5>
+						<div class="box">🟢 0 Account Connected</div>
+						<button class="cards-btn">
+							INTEGRATE NOW <span class="fa fa-arrow-right"></span>
+						</button>
+					</div>
+					<div class="card">
+						<img
+							id="third-child"
+							src="./img/activecampaign-logo.png"
+							alt=""
+							class="centered"
+						/>
+						<h5>Active Campaign</h5>
+						<div class="box">🟢 0 Account Connected</div>
+						<button class="cards-btn">
+							INTEGRATE NOW <span class="fa fa-arrow-right"></span>
+						</button>
+					</div>
+					<div class="card">
+						<img
+							src="./img/dlf.pt-visa-gift-card-png-5542180.png"
+							alt=""
+							id="fourth-child"
+							class="centered"
+						/>
+						<h5>IContact</h5>
+						<div class="box">🟢 0 Account Connected</div>
+						<button class="cards-btn">
+							INTEGRATE NOW <span class="fa fa-arrow-right"></span>
+						</button>
+					</div>
+					<div class="card">
+						<img
+							src="./img/sendlane-vector-logo.png"
+							id="fifth-child"
+							alt=""
+							class="centered"
+						/>
+						<h5>Mailchimp</h5>
+						<div class="box">🟢 0 Account Connected</div>
+						<button class="cards-btn">
+							INTEGRATE NOW <span class="fa fa-arrow-right"></span>
+						</button>
+					</div>
+					<div class="card">
+						<img
+							src="./img/aweber.png"
+							alt=""
+							id="sixth-child"
+							class="centered"
+						/>
+						<h5>Mailchimp</h5>
+						<div class="box">🟢 0 Account Connected</div>
+						<button class="cards-btn">
+							INTEGRATE NOW <span class="fa fa-arrow-right"></span>
+						</button>
+					</div>
+					<div class="card">
+						<img
+							src="./img/Daco_2253182-removebg-preview.png"
+							alt=""
+							id="seventh-child"
+							class="centered"
+						/>
+						<h5>Mailchimp</h5>
+						<div class="box">🟢 0 Account Connected</div>
+						<button class="cards-btn">
+							INTEGRATE NOW <span class="fa fa-arrow-right"></span>
+						</button>
+					</div>
+					<div class="card">
+						<img
+							src="./img/bench.png"
+							alt=""
+							class="centered"
+							id="eigth-child"
+						/>
+						<h5>Mailchimp</h5>
+						<div class="box">🟢 0 Account Connected</div>
+						<button class="cards-btn">
+							INTEGRATE NOW <span class="fa fa-arrow-right"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
